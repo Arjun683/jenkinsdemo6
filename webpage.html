@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MVSR College</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #header {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+        }
+        .container {
+            display: flex;
+            height: calc(100vh - 60px);
+        }
+        #leftFrame {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+        #rightFrame {
+            width: 70%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e3f2fd;
+            font-size: 24px;
+            color: #007bff;
+            font-weight: bold;
+            padding: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+        }
+        a {
+            display: block;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function displayMessage(dept) {
+            document.getElementById("rightFrame").innerText = "Welcome to " + dept;
+        }
+    </script>
+</head>
+<body>
+    <div id="header">Welcome to MVSR College</div>
+    <div class="container">
+        <div id="leftFrame">
+            <h2>Departments</h2>
+            <ul>
+                <li><a href="#" onclick="displayMessage('Computer Science')">Computer Science</a></li>
+                <li><a href="#" onclick="displayMessage('Electronics & Communication')">Electronics & Communication</a></li>
+                <li><a href="#" onclick="displayMessage('Electrical & Electronics')">Electrical & Electronics</a></li>
+                <li><a href="#" onclick="displayMessage('Mechanical')">Mechanical</a></li>
+                <li><a href="#" onclick="displayMessage('Civil')">Civil</a></li>
+            </ul>
+        </div>
+        <div id="rightFrame">Welcome to MVSR College</div>
+    </div>
+</body>
+</html>
+
